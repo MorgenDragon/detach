@@ -1,0 +1,20 @@
+#include <iostream>
+
+using namespace std;
+
+void main(){
+    
+    cout<<"Введите строку"<<endl;
+	char str[1000];
+	gets(str);
+
+	for(char i=0; str[i]!='\0'; i++){
+        if (str[i] != ' ' && (str[i + 1] == ' ' || str[i +1] == '\0'))
+            count++;
+            i++;
+    }   
+    
+    cout<<"Количество слов-"<<count;
+
+system("pause");
+} 
