@@ -1,0 +1,27 @@
+#include <iostream>
+
+using namespace std;
+
+void main(){
+    
+   int a[10];
+   int s, p;
+   
+   for(int i=0; i<10; i++){
+       a[i]=rand()%10;
+       cout<<a[i]<<"  ";
+   }
+   cout<<endl;
+   
+    for(int i=0; i<10; i++){
+       s+=a[i];
+   } 
+    cout<<"Сумма="<<s<<endl;  
+    
+    for(int i=0; i<10; i++){
+       p*=a[i];
+   } 
+    cout<<"Произведение="<<p<<endl;  
+      
+system("pause");
+} 
