@@ -1,0 +1,36 @@
+#include <iostream>
+#include <math.h>
+
+using namespace std;
+
+void main(){
+    
+    double a, b, c;
+    
+    cout<<"a-?"<<endl;
+    cin>>a;
+    cout<<"b-?"<<endl;
+    cin>>b;
+    cout<<"c-?"<<endl;
+    cin>>c;
+
+    double D=(b*b)-(4*a*c);
+    
+    if (D>0){
+        double x1=(-b-sqrt(D))/2*a;
+        double x2=(-b+sqrt(D))/2*a;
+        cout<<"x1="<<x1<<endl;
+        cout<<"x2="<<x2<<endl;
+    }
+    
+    if (D==0){
+        double x3=(-b)/2*a;
+        cout<<"x="<<x3<<endl;
+    }
+    
+    if (D<0){
+        cout<<"Корней нет"<<endl;
+    }
+
+system("pause");
+} 
